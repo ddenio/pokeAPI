@@ -3,7 +3,7 @@
 /*******************************************/
 
 body {
-  
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background: url("../img/background.jpg") no-repeat center center fixed;
   background-size: cover;
   text-align: center;
@@ -21,27 +21,115 @@ body {
 img{
   display: block;
   margin: 0 auto;
+  width: 250px;
+  
 }
 
+input, button {
+  margin:10px;
+  margin-bottom: 30px;
+}
 
+input {
+  border-radius: 3px;
+  
+}
+
+label {
+  font-size: 18px;
+  color: rgba(253,192,13,255);
+  text-shadow: -1px 1px 0 #2e4595,
+                          1px 1px 0 #2e4595,
+                         1px -1px 0 #2e4595,
+                        -1px -1px 0 #2e4595;
+}
+button {
+  padding: 10px;
+  background-color: #2e4595;
+  color: rgba(253,192,13,255);
+  border-radius: 10px;
+  border: 3px solid black;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
+h1 {
+  color: rgba(253,192,13,255);
+  text-shadow: -2px 2px 0 #2e4595,
+                          2px 2px 0 #2e4595,
+                         2px -2px 0 #2e4595,
+                        -2px -2px 0 #2e4595;
+  margin-bottom: 35px;
+}
+
+ul, li {
+  color: rgba(253,192,13,255);
+  text-shadow: -1px 1px 0 black,
+                          1px 1px 0 black,
+                         1px -1px 0 black,
+                        -1px -1px 0 black;
+  font-size: 26px;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  padding-left: 0px;
+  background-color: #2e4595;
+  border: 4px solid black;
+  border-radius: 6px;
+  padding: 20px 0;
+}
+#pokeHeading1, #pokeHeading2, h2 {
+  color: rgba(253,192,13,255);
+  text-shadow: -2px 2px 0 #2e4595,
+                          2px 2px 0 #2e4595,
+                         2px -2px 0 #2e4595,
+                        -2px -2px 0 #2e4595;
+  margin-bottom: 5px;
+}
 #container {
   border: 6px solid black;
   border-radius: 10px;
   background-color: rgba(195,207,161,255);
-  padding: 40px;
+  padding: 20px;
   margin: 0 auto;
   width: 40%;
   margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#container2 {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#pokeDiv1, #pokeDiv2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 #logo {
-  width: 600px;
+  width: 450px;
   border: 6px solid black;
   border-radius: 10px;
   margin-top: 40px;
+  padding: 20px 40px;
   background-color: rgba(195,207,161,255);
+}
+
+#results,#results2 {
+  margin:20px;
+  width: 400px;
+  display: none;
+  border: 6px solid black;
+  border-radius: 10px;
+  background-color: rgba(195,207,161,255);
+  justify-content: space-evenly;
+  align-items: space-evenly;
 }

@@ -1,31 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
-    	<meta name="keywords" content="one, two, three">
 
-		<title>Title in the tab</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This is where your description goes">
+	<meta name="keywords" content="one, two, three">
 
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<img src="img/pokelogo2.png" alt="" id="logo">
-		<div id="container">
-		<h1>Check two pokemon for types!</h1>
-		<input id='poke1' type="text" name="" value="">
-		<input id='poke2' type="text" name="" value="">
+	<title>Title in the tab</title>
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<img src="img/logo.png" alt="" id="logo">
+	<div id="container">
+		<h1>Check two Pokemon for types!</h1>
+		<label for="poke1">Pokemon #1</label>
+		<input id='poke1' type="text" name="poke1" value="">
+		<label for="poke2">Pokemon #2</label>
+		<input id='poke2' type="text" name="poke2" value="">
 		<button type="button" name="button">Check Types</button>
 	</div>
 
-	<div id="results">
-
-		<img id='pokeImg1' src="" alt="">
-		<img id='pokeImg2' src="" alt="">
+	<div id="container2">
+		<div id="results">
+			<div id='pokeDiv1'>
+				<h1 id='pokeHeading1'></h1>
+				<img id='pokeImg1' src="" alt="">
+				<ul id='pokeType1'>Type(s) :</ul>
+			</div>
+		</div>
+		<div id="results2">
+			<div id='pokeDiv2'>
+				<h1 id='pokeHeading2'></h1>
+				<img id='pokeImg2' src="" alt="">
+				<ul id='pokeType2'>Type(s) :</ul>
+			</div>
+		</div>
 	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
 
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
 </html>
